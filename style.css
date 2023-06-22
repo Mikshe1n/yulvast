@@ -1,6 +1,10 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: rgb(255, 238, 205);
+    background-color: rgb(255, 255, 255);
 }
 header {
     width: 100%;
@@ -28,17 +32,17 @@ a {
   }
   
 .block {
-    height: 99%;
-    width: 49%;
-    margin: 2px;
-    font-size: 50px;
-    text-align: center;
+    width: 60vw;
+    height: 60vh;
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    margin: auto;
     padding: 50px 0px;
-
-  }
-  .slide {
     
-  }
+}
+.block b {
+    font-size: 40px;
+}
 button {
     margin-top: 50px;
     margin-left: 200px;
@@ -49,20 +53,16 @@ button {
     background-color: black;
     color: antiquewhite;
 }
-.block1 {
-    width: 49%;
-    background-color: aliceblue;
-    height: 200px;
-    display: inline;
-}
+
 .black-pr {
     width: 100%;
-    height: 230px;
+    height: 100px;
     background-color: black;
     color: white;
+    margin: auto;
     text-align: center;
+    padding: 25px 0px 25px 0px;
     font-size: 35px;
-    padding-top: 16px;
 }
 
 .text-head img {
@@ -70,3 +70,62 @@ button {
     height: 40px;
     margin-right: 50px;
 }
+
+
+/* 2 slide */
+
+#novinki p {
+    font-size: 50px;
+    padding: 20px;
+}
+
+#novinki {
+    text-align: center;
+    height: 85vh;
+}
+
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Удалите лишние левые и правые поля из-за заполнения столбцов */
+  .row {margin: 0 20px;}
+  
+  /* Очистить поплавки после столбцов */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Стиль встречных карт */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* это добавляет эффект "карточек" */
+    padding: 16px;
+    text-align: center;
+    background-color: #e4e4e4;
+    height: 50vh;
+    border-radius: 20px;
+  }
+  
+  /* Адаптивные столбцы - один макет столбца (вертикальный) на небольших экранах */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
