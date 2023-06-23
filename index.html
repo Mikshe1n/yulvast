@@ -8,14 +8,13 @@
     <title>YulVast</title>
 </head>
 <body>
-    <header>
-        <div class="text-head">
+    <header id="intro">
+        <nav class="text-head">
             <a href="#novinki">Каталог</a>
-            <a href=""><img src="" alt=""></a>
+            <a href="#"><img src="/image/image 1.png" alt=""></a>
             <a href="#contact">Контакты</a> 
-        </div>
-    </header>
-    <section class="container">
+        </nav>
+      <section class="container" >
         <div class="block">
           <div class="img-head"><img src="/image/image 2.png" alt=""></div>
           <div class="text-block">
@@ -27,6 +26,9 @@
             
           </div>
         </div>
+
+    </header>
+    
         
     </section>
         <div class="black-pr">
@@ -59,6 +61,20 @@
       </section>
 
 
-        
+      <script src="three.r134.min.js"></script>
+      <script src="vanta.fog.min.js"></script>
+      <script>
+VANTA.FOG({
+  el: "#intro",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0xb3ff,
+  midtoneColor: 0x77ff,
+  lowlightColor: 0x1a009d
+})
+</script>  
 </body>
 </html>
