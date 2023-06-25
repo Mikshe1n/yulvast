@@ -57,22 +57,19 @@ header {
     display:inline-block;
 
     position: relative;
-    top: -350px;
+    top: -100px;
 }
-.button {
-    position: relative;
-    top: -200px;
-    right: 50px;
-    text-align: right;
+.button button{
+  width: 10vw;
+  height: 5vh;
+  font-size: 20px;
 }
-button {
-    width: 150px;
-    height: 80px;
-    border-radius: 20px;
-    font-size: 30px;
-    background-color: black;
-    color: antiquewhite;
-    
+.button{
+  margin: 200px 300px;
+  width: 10vw;
+  height: 18vh;
+  text-align: center;
+
 }
 .block img {
   height: 50vh;
@@ -180,27 +177,10 @@ a {
 /* 3 slide */
 #contact {
   text-align: center;
-  height: 90vh;
-  background-color: #aaaaaa;
+  height: 85vh;
+  background-color: #bdbdbd;
 }
-/* 
-.form {
-  background-color: aqua;
-  width: 50vw;
-  height: 60vh;
-  margin: auto;
-  padding: 100px;
-}
-.form input{
-  width: 15vw;
-  height: 3vh;
-  border-radius: 20px;
-  background-color: #dadada;
-  padding: 15px;
-}
-.form label {
-  margin: auto;
-} */
+
 
 
 
@@ -230,6 +210,8 @@ form div,
 form label,
 form input,
 form textarea {
+  font-size: 24px;
+  text-align: left;
   width: 100%;
 }
 
@@ -286,14 +268,91 @@ button {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 8px 6px -6px #555;
+  transition: all 0.5s;
 }
 button:hover {
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   box-shadow: none;
+  transition: all 0.5s;
 }
 
 @media (max-width: 425px) {
   form {
+    font-size: 14px;
     width: 100%;
   }
 }
+
+
+/* footer */
+
+
+.footer{
+  width: 100vw;
+  height: 30vh;
+  background-color: #000;
+  padding:30px 0px;
+  font-size: 18px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+.fa img{
+    width: 3vw;
+    height: 4vh;
+    background-color: #979797;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+
+  .fa img:hover{
+    background-color: #ffffff;
+    transition: all 0.5s;
+  }
